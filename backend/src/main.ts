@@ -16,8 +16,8 @@ export async function createApp() {
 
 /** Shared by main.ts and the e2e tests so both run the same pipeline. */
 /**
- * Vercel also serves the site at per-deployment addresses (https://ewentwall-abc123-team.vercel.app,
- * https://ewentwall-git-main-team.vercel.app). Allow those of the same project so the site works from any of them.
+ * Vercel also serves the site at per-deployment addresses (https://eventwall00-abc123-team.vercel.app,
+ * https://eventwall00-git-main-team.vercel.app). Allow those of the same project so the site works from any of them.
  */
 function vercelDeployments(frontendUrl: string): RegExp[] {
   const project = /^https:\/\/([a-z0-9-]+)\.vercel\.app$/.exec(frontendUrl)?.[1];
